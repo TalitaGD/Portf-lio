@@ -18,6 +18,3 @@
 * CSS
 * JavaScript
 
-## Site:
-
-All rights reserved - [Talita Dovigo](https://talitadovigo.netlify.app/)
