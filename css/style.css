@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
 
 :root {
 	--bg-black-900: #f2f2fc;
@@ -107,26 +109,29 @@ ul {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -15px;
-	margin-right: -15px;
+	/* margin-left: -15px;
+	margin-right: -15px; */
 	position: relative;
 }
+
 
 .btn {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 12px 35px;
-	color: white;
+	color: var(--skin-color);
 	border-radius: 40px;
 	display: inline-block;
+	border: 1px solid var(--skin-color);
 	white-space: nowrap;
-	border: none;
-	background: var(--skin-color);
+	background: transparent;
 	transition: all 0.3s ease;
 }
 
 .btn:hover {
 	transform: scale(1.05);
+	background: var(--skin-color);
+	color: white;
 }
 
 .shadow-dark {
@@ -279,7 +284,7 @@ h3.hello {
 }
 
 h3.hello span {
-	font-family: 'Clicker Script', cursive;
+	font-family: 'Dancing Script', cursive;
 	font-size: 30px;
 	font-weight: 700;
 	color: var(--skin-color);
@@ -295,8 +300,8 @@ h3.my-profession {
 }
 
 .home-info p {
-	margin-bottom: 70px;
-	font-size: 20px;
+	margin-bottom: 50px;
+	font-size: 16px;
 	color: var(--text-black-700);
 }
 
@@ -477,7 +482,8 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-item {
 	position: relative;
-	padding-left: 37px;
+	padding-left: 30px;
+	padding-right: 10px;
 	padding-bottom: 50px;
 }
 
@@ -655,6 +661,11 @@ h3.my-profession {
 	display: inline-block;
 }
 
+.contact .contact-info-item .icon:hover {
+	transform: scale(1.05);
+}
+
+
 .contact .contact-info-item .icon .fa {
 	font-size: 25px;
 	color: var(--skin-color);
@@ -726,6 +737,10 @@ h3.my-profession {
 	height: 50px;
 	padding: 0 50px;
 }
+.main-content {
+	padding-left: 270px;
+}
+
 
 
 @media (max-width:1199px) {
@@ -770,3 +785,78 @@ h3.my-profession {
 		max-width: 100%;
 	}
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .popup-content {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .popup h3 {
+    margin-top: 0;
+	color: var(--skin-color);
+	padding: 5px;
+  }
+
+  .popup p {
+    margin-top: 0;
+	padding: 20px;
+  }
+
+  .popup button {
+    background-color:transparent;
+    color: var(--skin-color);
+    padding: 10px 20px;
+    border: 1px solid var(--skin-color);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .popup button:hover {
+	background-color: var(--skin-color);
+    color: #ffffff;
+}
+.portfolio-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.portfolio-item {
+	flex-basis: calc(33.33% - 30px);
+	margin-bottom: 30px;
+}
+
+.portfolio-button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.expanded {
+	flex-direction: column-reverse;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
