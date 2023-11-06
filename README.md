@@ -1,5 +1,5 @@
 # Site: Talita Dovigo 
-# Portfólio - Talita Dovigo 👋 🚀
+# Portfólio - Talita Dovigo 🚀
 
 ![Portfólio - Talita Dovigo](./image/image.png)
 
